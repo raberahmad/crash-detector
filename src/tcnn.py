@@ -16,7 +16,7 @@ from collections import OrderedDict
 class TCNN:
     def __init__(self):
         self.project_root_dir = Path(__file__).parents[1]
-        self.data_dir = str(self.project_root_dir) + "/dataset-beamng-cropped"
+        self.data_dir = str(self.project_root_dir) + "/dataset-beamng-cropped-with-real-test"
         
         self.train_dir = self.data_dir + "/train"
         self.valid_dir = self.data_dir + "/valid"

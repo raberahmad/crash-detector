@@ -109,10 +109,6 @@ class Visual:
         else:
             pil_image = image
 
-
-
-
-        
     
         pil_image.thumbnail((500, 500))
             
@@ -130,8 +126,6 @@ class Visual:
         std = np.array([0.229, 0.224, 0.225])
         np_image = (np_image - mean) / std
 
-        # PyTorch expects the color channel to be the first dimension but it's the third dimension in the PIL image and Numpy array
-        # Color channel needs to be first; retain the order of the other two dimensions.
         np_image = np_image.transpose((2, 0, 1))
 
         return np_image

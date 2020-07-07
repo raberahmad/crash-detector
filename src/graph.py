@@ -10,8 +10,8 @@ class Plotter():
 
         self.title = title
 
-        plt.ylim(top=1)  # adjust the top leaving bottom unchanged
-        plt.ylim(bottom=0)  # adjust the bottom leaving top unchanged
+        plt.ylim(top=1)  
+        plt.ylim(bottom=0)  
 
         plt.xlabel("Epochs")
         plt.ylabel("Loss")
